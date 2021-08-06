@@ -107,5 +107,7 @@ function addCell(){
     more = more/20;
     cols = cols + more;
     console.log(cols);
+    document.getElementById('addCell').innerHTML='';
     createLifeGrid();
+    
 }
