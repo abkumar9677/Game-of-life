@@ -11,7 +11,8 @@
       </style>
   </head>
   <body>
-      
+    <input type="search" placeholder="Search for cells"><button>Search</button>&nbsp;&nbsp;
+    &nbsp;
       <span style="background-color: rgb(20,255,0);width: 45px;height: 45px;border: 1.5px solid black;color: white;">Alive</span>&nbsp;&nbsp;&nbsp;&nbsp;
       <span style="background-color: white;width: 45px;height: 45px;border: 1.5px solid black;color: black;">Dead</span>&nbsp;&nbsp;&nbsp;&nbsp;
       <br>
@@ -24,12 +25,13 @@
           <button onclick="submit()">Draw</button>
       </form> -->
     <main>
+        
     </main>
     <br>
-    <div style="display: flex;flex-direction: row;margin: 3px;">
+    <div style="display: flex;flex-direction: column;margin: 3px;">
     <button class="play-button">Play</button>
     <button class="clear-button">Clear</button>
-    <input type="number" id="addCell" placeholder="Add cell between 20 to 100" style="width: 200px;"><button onclick="addCell()">Add</button>
+    <input type="number" id="addCell" placeholder="Add cell between 20 to 100" style="width: 200px;" min="20" max="100"><button onclick="addCell()">Add</button>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
