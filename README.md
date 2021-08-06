@@ -1,4 +1,7 @@
 ﻿# Game-of-life
+ 
+ Assignment Executing video link: https://www.awesomescreenshot.com/video/4751887?key=afd8eef2a1fb1afa7e79bbf94c29e485
+ 
 ## Assignment
 
 Imagine an infinite two-dimensional orthogonal grid of square cells, each of which is in one of two possible states, live or dead. Every cell interacts with its eight neighbors, which are the cells that are directly horizontally, vertically, or diagonally adjacent. 
@@ -18,3 +21,7 @@ Write a program in the language(s) of your choice with following guidelines:
 3. The program should output the state of the cells and changes - representation (UI/CLI et al.) of the state of the cells can be decided by the developer 
 4. The program should provide a way to search by the name of the cell and show the current state of the cell 
 5. The program should end on termination through appropriate OS specific signals 
+
+  <video controls autoplay>
+  <source src="https://www.awesomescreenshot.com/video/4751887?key=afd8eef2a1fb1afa7e79bbf94c29e485" type="video/mp4">
+  </video>
