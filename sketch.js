@@ -79,6 +79,7 @@ function draw() {
   }
 }
  
+// Grid click event
 function mouseClicked() {
   let row = Math.floor(mouseY/height * rows);
   let col = Math.floor(mouseX/width * cols);
@@ -101,6 +102,7 @@ clearButton.addEventListener("click", function() {
   grid = createLifeGrid();
 });
 
+// Add cols event
 function addCell(){
     var more = document.getElementById('addCell').value;
 
