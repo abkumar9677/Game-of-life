@@ -1,10 +1,10 @@
 
 const rows = 20;
-const cols = 25;
-let grid = createGrid();
+var cols = 25;
+let grid = createLifeGrid();
 let play = false;
  
-function createGrid() {
+function createLifeGrid() {
   let result = [];
   for (let i = 0; i < rows; i++) {
     let row = []; 
@@ -17,7 +17,7 @@ function createGrid() {
 }
  
 function nextGeneration() {
-  let newGrid = createGrid();
+  let newGrid = createLifeGrid();
   for (let i = 0; i < rows; i++) {
     for (let j = 0; j < cols; j++) {
       // Counts the number of alive neighbors
@@ -46,7 +46,7 @@ function nextGeneration() {
 // Initial call for rows and columns
 function setup() {
   let height = 500;
-  console.log(grid);
+//   console.log(grid);
   createCanvas(height * cols/rows, height);
   frameRate(3);
 }
@@ -58,14 +58,14 @@ function draw() {
   for (let i = 0; i < rows; i++) {
     for (let j = 0; j < cols; j++) {
       if (grid[i][j]) {
-        fill(20);
+        fill(20,255,0);
         rect(j/cols * width, i/rows * height, width/cols, height/rows);
       }
     }
   }
  
   // Horizontal lines for grid
-  stroke(200);
+  stroke(27,90,120);
   for (let i = 0; i <= rows; i++) {
     line(0, i/rows * height, width, i/rows * height);
   }
@@ -76,7 +76,6 @@ function draw() {
   }
   if (play) {
     nextGeneration();
-    console.log(grid)
   }
 }
  
@@ -99,9 +98,14 @@ playButton.addEventListener("click", function() {
 });
 let clearButton = document.querySelector(".clear-button");
 clearButton.addEventListener("click", function() {
-  grid = createGrid();
+  grid = createLifeGrid();
 });
 
 function addCell(){
-    
+    var more = document.getElementById('addCell').value;
+
+    more = more/20;
+    cols = cols + more;
+    console.log(cols);
+    createLifeGrid();
 }

@@ -1,7 +1,21 @@
 <html>
   <head>
+      <style>
+          body{
+              background-color: rgb(131, 228, 196);
+              display: flex;
+              /* flex-direction: column; */
+              align-items: center;
+              justify-content: center;
+          }
+      </style>
   </head>
   <body>
+      
+      <span style="background-color: rgb(20,255,0);width: 45px;height: 45px;border: 1.5px solid black;color: white;">Alive</span>&nbsp;&nbsp;&nbsp;&nbsp;
+      <span style="background-color: white;width: 45px;height: 45px;border: 1.5px solid black;color: black;">Dead</span>&nbsp;&nbsp;&nbsp;&nbsp;
+      <br>
+      <br>
       <!-- <form>
           No. of rows: <input type="number" id="rows">
           <br>
@@ -12,10 +26,12 @@
     <main>
     </main>
     <br>
+    <div style="display: flex;flex-direction: row;margin: 3px;">
     <button class="play-button">Play</button>
     <button class="clear-button">Clear</button>
-    <br>
     <input type="number" id="addCell" placeholder="Add cell between 20 to 100" style="width: 200px;"><button onclick="addCell()">Add</button>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
     <script src="sketch.js"></script>
 
